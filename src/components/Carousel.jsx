@@ -30,8 +30,16 @@ export default function Carousel() {
   }
 
   return (
-    <div className="main-carousel">
-      <div className="progress-bar">...</div>
+    <section className="main-carousel">
+      <div className="progress-bar">
+        {projects.map((item, index) => (
+          <>
+            <span
+              className={index === activeIndex ? "dot-big" : "dot-small"}
+            ></span>
+          </>
+        ))}
+      </div>
       <div className="main-slide">
         <div className="content-button">
           <button onClick={prevSlide}>
@@ -47,15 +55,19 @@ export default function Carousel() {
             <p>{project.description}</p>
             <p>
               <b>Techs: </b>
-              {project.link}
+              {project.techs}
             </p>
             <p>
-              <b>Link: </b>
-              {project.link}
+              <b>App: </b>
+              <a href={project.link}>#</a>
             </p>
             <p>
-              <b>Code: </b>
-              {project.code}
+              {project.code && (
+                <>
+                  <b>Code: </b>
+                  {project.code}
+                </>
+              )}
             </p>
           </div>
         </div>
@@ -66,6 +78,6 @@ export default function Carousel() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

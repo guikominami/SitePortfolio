@@ -6,13 +6,7 @@ function App() {
   return (
     <section className="main">
       <Header />
-      <Carousel />;
-      {/* {projects.map((item) => (
-        <>
-          <Carousel project={item} />;
-        </>
-      ))} */}
-      ;
+      <Carousel />
     </section>
   );
 }

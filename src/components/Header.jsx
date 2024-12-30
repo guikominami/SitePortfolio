@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <section className="main-header">
       <div>
-        <p>teste gallery</p>
+        <p></p>
       </div>
     </section>
   );

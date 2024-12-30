@@ -1,5 +1,6 @@
 .main-carousel {
   height: auto;
+  width: 100%;
   background-color: rgb(255, 205, 0);
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
 }
 
 .main-slide {
-  min-width: 65%;
+  width: 55rem;
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -22,11 +23,37 @@
   margin-bottom: 2rem;
 }
 
+.progress-bar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.dot-big {
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.dot-small {
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
 .slide {
-  width: 80%;
-  background-color: white;
   display: flex;
   flex-direction: row;
+  width: 80%;
+  background-color: white;
   align-items: start;
   justify-content: center;
   padding-top: 2rem;
@@ -49,11 +76,18 @@
   margin: 1rem 2rem;
 }
 
+.content-text h1 {
+  text-transform: uppercase;
+}
+
 .content-text p {
   margin-bottom: 1rem;
+  word-break: normal;
+  word-wrap: break-word;
 }
 
 .content-button {
+  display: contents;
   width: 10%;
   text-align: center;
 }
@@ -65,4 +99,71 @@
 
 .content-button img {
   width: 3.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .main-carousel {
+    flex-direction: column;
+  }
+
+  .main-slide {
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide {
+    flex-direction: column;
+    padding: 2rem 0 2rem 1.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .content-button {
+    display: none;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content-text {
+    width: 100%;
+    margin: 0;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-carousel {
+    padding-top: 1rem;
+  }
+
+  .main-slide {
+    width: auto;
+  }
+
+  .slide {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 1.5rem 0 1rem 0rem;
+    margin: 0;
+  }
+
+  .content-img {
+    margin: 0;
+  }
+
+  .content-img img {
+    width: 16rem;
+  }
+
+  .content-text {
+    text-align: start;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
 }

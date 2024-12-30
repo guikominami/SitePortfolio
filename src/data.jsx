@@ -22,7 +22,7 @@ export const projects = [
     id: 2,
     title: "Boloriê Umutina",
     descriptionEn:
-      "Loja virtual para venda dos produtos elaborados pela etinia indígena Boloriê Umutina da região do Mato Grosso do Sul - Brasil.",
+      "E-commerce for sale the products made by the Boloriê Umutina indigenous ethnic group from the Mato Grosso do Sul region - Brazil.",
     descriptionPt:
       "Loja virtual para venda dos produtos elaborados pela etinia indígena Boloriê Umutina da região do Mato Grosso do Sul - Brasil.",
     img: bolorie,
@@ -35,7 +35,7 @@ export const projects = [
     descriptionPt:
       "Um jogo de RPG em que para derrotar o oponente, é necessário responder questões sobre diversos temas, além de contar com a sorte.",
     descriptionEn:
-      "Um jogo de RPG em que para derrotar o oponente, é necessário responder questões sobre diversos temas, além de contar com a sorte.",
+      "An RPG game in which to defeat your opponent, you need to answer questions on different topics, in addition to relying on luck.",
     img: quizgame,
     techs: ["ReactJs", "Frontend", "API"],
     link: "https://mudalab.com.br/rpgquizgame/",
@@ -47,7 +47,7 @@ export const projects = [
     descriptionPt:
       "Negócio social que usa a tecnologia e educação para o desafio de soluções. Inspirado em Inovação Cidadã, Movimento Maker e Aprendizagem criativa",
     descriptionEn:
-      "Social business that combines technology and social knowledge to contribute to the solution of challenges. Inspired by Citizen Innovation, Maker Movement and Learn by Doing, creates objects, courses and workshops and works in public schools, NGOs and communities with social inequality.",
+      "Social business that combines technology and social knowledge to contribute to the solution of challenges. ",
     img: mudalab,
     techs: ["ReactJs", "Frontend", "CSS"],
     link: "https://mudalab.com.br/",
@@ -58,7 +58,7 @@ export const projects = [
     descriptionPt:
       "Dispositivo de narrativa gráfica gamificada desenvolvido com Raspberry Py que estimula a reflexão sobre o livro 1984, de George Orwell e a realidade que estamos vivendo em nossa sociedade atual.",
     descriptionEn:
-      "Dispositivo desenvolvido com Raspberry Py que estimula a reflexão sobre o livro 1984, de George Orwell e a realidade que estamos vivendo em nossa sociedade atual.",
+      "Gamified graphic narrative device developed with Raspberry Py that encourages reflection on the book 1984 by George Orwell and the reality we are living in our current society.",
 
     img: omec,
     techs: ["Python", "Frontend", "SQL"],
@@ -70,9 +70,9 @@ export const projects = [
     descriptionPt:
       "Exposição virtual de contos da artista Dunga Rodrigues de Cuiabá - Brasil.",
     descriptionEn:
-      "Portfólio de arte com desenhos digitais, feitos a mão e esboços do artista Otto Kominami,",
+      "Virtual exhibition of short stories by artist Dunga Rodrigues from Cuiabá - Brazil.",
     img: mapa,
-    techs: ["Html", "CSS"],
+    techs: ["HTML", "CSS"],
     link: "https://grupotibanare.com.br/",
   },
   {
@@ -81,7 +81,7 @@ export const projects = [
     descriptionPt:
       "Portfólio de arte com desenhos digitais, feitos a mão e esboços do artista Otto Kominami.",
     descriptionEn:
-      "Portfólio de arte com desenhos digitais, feitos a mão e esboços do artista Otto Kominami,",
+      "Art portfolio with digital, handmade drawings and sketches by artist Otto Kominami.",
     img: art,
     techs: ["ReactJs", "Frontend", "CSS"],
     link: "https://mudalab.com.br/artportfolio/",

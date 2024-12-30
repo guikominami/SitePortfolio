@@ -1,7 +1,8 @@
 {
   "name": "siteportfolio",
+  "homepage": "https://mudalab.com.br/portfolio/",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

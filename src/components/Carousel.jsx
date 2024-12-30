@@ -1,14 +1,11 @@
-/* eslint-disable react/prop-types */
 // https://stackademic.com/blog/mastering-react-carousel-building-dynamic-image-sliders
 
 import { useState } from "react";
-
+import Slide from "./Slide";
 import "./Carousel.css";
 import buttonNext from "../assets/imgs/button_next.png";
 import buttonPrev from "../assets/imgs/button_prev.png";
-import tools from "../assets/imgs/tools.png";
-import link from "../assets/imgs/link.png";
-import code from "../assets/imgs/code.png";
+
 import { defineSwipe, Swipeable } from "react-touch";
 import { projects } from "../data";
 
@@ -54,31 +51,7 @@ export default function Carousel() {
               <img src={buttonPrev} />
             </button>
           </div>
-          <div className="slide">
-            <div className="content-img">
-              <img src={project.img} alt="" />
-            </div>
-            <div className="content-text">
-              <h1>{project.title}</h1>
-              <p>{project.descriptionPt}</p>
-              <p>
-                <img className="icon" src={tools} alt="" />
-                {project.techs.map((item) => (
-                  <>
-                    <button className="techs">{item}</button>
-                  </>
-                ))}
-              </p>
-              <p>
-                <a href={project.link} target="blank">
-                  <img className="icon" src={link} alt="" />
-                </a>
-                <a href={project.code} target="blank">
-                  <img className="icon" src={code} alt="" />
-                </a>
-              </p>
-            </div>
-          </div>
+          <Slide project={project} />
           <div className="content-button">
             <button onClick={nextSlide}>
               {" "}

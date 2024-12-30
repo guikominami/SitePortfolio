@@ -1,0 +1,16 @@
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  height: 4%;
+  align-self: center;
+}
+
+.main-footer img {
+  margin-top: 1.5rem;
+  width: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main-footer {
+  }
+}

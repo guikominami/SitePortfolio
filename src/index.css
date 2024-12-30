@@ -21,3 +21,9 @@
   flex-direction: column;
   height: 40rem;
 }
+
+@media screen and (max-width: 600px) {
+  .main {
+    height: 30rem;
+  }
+}

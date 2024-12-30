@@ -6,14 +6,17 @@ import { useState } from "react";
 import "./Carousel.css";
 import buttonNext from "../assets/imgs/button_next.png";
 import buttonPrev from "../assets/imgs/button_prev.png";
-
+import tools from "../assets/imgs/tools.png";
+import link from "../assets/imgs/link.png";
+import code from "../assets/imgs/code.png";
+import { defineSwipe, Swipeable } from "react-touch";
 import { projects } from "../data";
 
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const project = projects[activeIndex];
 
-  console.log(projects.length);
+  const swipe = defineSwipe({ swipeDistance: 50 });
 
   function nextSlide() {
     console.log(activeIndex);
@@ -40,44 +43,50 @@ export default function Carousel() {
           </>
         ))}
       </div>
-      <div className="main-slide">
-        <div className="content-button">
-          <button onClick={prevSlide}>
-            <img src={buttonPrev} />
-          </button>
-        </div>
-        <div className="slide">
-          <div className="content-img">
-            <img src={project.img} alt="" />
+      <Swipeable
+        config={swipe}
+        onSwipeRight={prevSlide}
+        onSwipeLeft={nextSlide}
+      >
+        <div className="main-slide">
+          <div className="content-button">
+            <button onClick={prevSlide}>
+              <img src={buttonPrev} />
+            </button>
           </div>
-          <div className="content-text">
-            <h1>{project.title}</h1>
-            <p>{project.description}</p>
-            <p>
-              <b>Techs: </b>
-              {project.techs}
-            </p>
-            <p>
-              <b>App: </b>
-              <a href={project.link}>#</a>
-            </p>
-            <p>
-              {project.code && (
-                <>
-                  <b>Code: </b>
-                  {project.code}
-                </>
-              )}
-            </p>
+          <div className="slide">
+            <div className="content-img">
+              <img src={project.img} alt="" />
+            </div>
+            <div className="content-text">
+              <h1>{project.title}</h1>
+              <p>{project.descriptionPt}</p>
+              <p>
+                <img className="icon" src={tools} alt="" />
+                {project.techs.map((item) => (
+                  <>
+                    <button className="techs">{item}</button>
+                  </>
+                ))}
+              </p>
+              <p>
+                <a href={project.link} target="blank">
+                  <img className="icon" src={link} alt="" />
+                </a>
+                <a href={project.code} target="blank">
+                  <img className="icon" src={code} alt="" />
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="content-button">
+            <button onClick={nextSlide}>
+              {" "}
+              <img src={buttonNext} />
+            </button>
           </div>
         </div>
-        <div className="content-button">
-          <button onClick={nextSlide}>
-            {" "}
-            <img src={buttonNext} />
-          </button>
-        </div>
-      </div>
+      </Swipeable>
     </section>
   );
 }

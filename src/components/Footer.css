@@ -19,5 +19,15 @@
 @media screen and (max-width: 600px) {
   .main-footer {
     margin: 0.5rem 1rem 0rem 1rem;
+    justify-content: center;
+  }
+
+  .main-footer span {
+    font-size: large;
+    margin-right: 1rem;
+  }
+
+  .main-footer img {
+    width: 2.5rem;
   }
 }

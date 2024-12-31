@@ -27,11 +27,9 @@ export default function Slide({ project }) {
         <p>
           <img className="icon" src={tools} alt="" />
           {project.techs.map((item, index) => (
-            <>
-              <button key={index} className="techs">
-                {item}
-              </button>
-            </>
+            <span key={index}>
+              <button className="techs">{item}</button>
+            </span>
           ))}
         </p>
         <p>

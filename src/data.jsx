@@ -81,7 +81,7 @@ export const projects = [
     descriptionPt:
       "Portfólio de arte com desenhos digitais, feitos a mão e esboços do artista Otto Kominami.",
     descriptionEn:
-      "Art portfolio with digital, handmade drawings and sketches by artist Otto Kominami.",
+      "An art portfolio featuring digital and handmade drawings and sketches by the young artist Otto Kominami.",
     img: art,
     techs: ["ReactJs", "Frontend", "CSS"],
     link: "https://mudalab.com.br/artportfolio/",

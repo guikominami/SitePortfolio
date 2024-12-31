@@ -70,7 +70,6 @@
   }
 
   .content-text {
-    width: 100%;
     margin: 0;
     padding-left: 1rem;
   }
@@ -82,7 +81,7 @@
     justify-content: center;
     align-self: center;
     text-align: center;
-    padding: 2rem 0 2rem 0rem;
+    padding: 2rem 0 0 0;
     margin: 0;
   }
 
@@ -91,13 +90,14 @@
   }
 
   .content-img img {
-    width: 20rem;
+    width: 18rem;
   }
 
   .content-text {
+    width: 20rem;
     text-align: start;
     padding-top: 0.5rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -107,5 +107,11 @@
 
   .content-text p {
     margin-bottom: 1rem;
+  }
+
+  .techs {
+    margin-right: 0.3rem;
+    background-color: rgb(216, 213, 213);
+    padding: 0.4rem 0.8rem;
   }
 }

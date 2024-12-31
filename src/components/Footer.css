@@ -1,16 +1,23 @@
 .main-footer {
   display: flex;
   flex-direction: row;
-  height: 4%;
-  align-self: center;
+  height: 10%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5rem 10rem 0rem 7rem;
+}
+
+.main-footer span {
+  font-size: larger;
+  font-weight: 700;
 }
 
 .main-footer img {
-  margin-top: 1.5rem;
   width: 3rem;
 }
 
 @media screen and (max-width: 600px) {
   .main-footer {
+    margin: 0.5rem 1rem 0rem 1rem;
   }
 }

@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -49,47 +49,6 @@
   margin-left: 0.2rem;
 }
 
-.slide {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  align-items: start;
-  justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 2px 5px 1px rgb(0 0 0 / 40%);
-}
-
-.content-img {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.content-img img {
-  width: 25rem;
-  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 40%);
-}
-
-.content-text {
-  width: 22rem;
-  padding-right: 2rem;
-}
-
-.content-text h1 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.content-text p {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 2rem;
-  word-break: normal;
-  word-wrap: break-word;
-}
-
 .content-button {
   display: contents;
   width: 10%;
@@ -111,24 +70,6 @@
   opacity: 0.9;
 }
 
-.icon {
-  width: 2rem;
-  margin-right: 1rem;
-}
-
-.icon:hover {
-  opacity: 0.7;
-}
-
-.techs {
-  font: inherit;
-  border-radius: 2rem;
-  border: none;
-  margin-right: 0.5rem;
-  background-color: rgb(216, 213, 213);
-  padding: 0.4rem 1rem;
-}
-
 @media screen and (max-width: 800px) {
   .main-carousel {
     flex-direction: column;
@@ -140,71 +81,23 @@
     justify-content: center;
   }
 
-  .slide {
-    flex-direction: column;
-    padding: 2rem 0 2rem 1.8rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-  }
-
   .content-button {
     display: none;
-  }
-
-  .content-img {
-    width: 100%;
-  }
-
-  .content-text {
-    width: 100%;
-    margin: 0;
-    padding-left: 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .main-carousel {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
   }
 
   .main-slide {
     width: 40%;
+    margin-bottom: 1rem;
   }
 
   .progress-bar {
     padding-bottom: 1rem;
-  }
-
-  .slide {
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    padding: 2rem 0 2rem 0rem;
-    margin: 0;
-  }
-
-  .content-img {
-    margin: 0;
-  }
-
-  .content-img img {
-    width: 20rem;
-  }
-
-  .content-text {
-    text-align: start;
-    padding-top: 0.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1rem;
-  }
-
-  .content-text h1 {
-    margin-top: 1rem;
-  }
-
-  .content-text p {
-    margin-bottom: 2rem;
   }
 }

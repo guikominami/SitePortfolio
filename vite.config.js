@@ -8,6 +8,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  base: "/portfolio/",
+  base: "/portfolioguikominami/",
   publicDir: "public",
 });

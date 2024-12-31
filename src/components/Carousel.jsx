@@ -16,11 +16,9 @@ export default function Carousel() {
   const swipe = defineSwipe({ swipeDistance: 50 });
 
   function nextSlide() {
-    console.log(activeIndex);
     setActiveIndex((prevIndex) =>
       activeIndex === projects.length - 1 ? 0 : prevIndex + 1
     );
-    console.log(activeIndex);
   }
 
   function prevSlide() {
@@ -33,11 +31,10 @@ export default function Carousel() {
     <section className="main-carousel">
       <div className="progress-bar">
         {projects.map((item, index) => (
-          <>
-            <span
-              className={index === activeIndex ? "dot-big" : "dot-small"}
-            ></span>
-          </>
+          <span
+            key={index}
+            className={index === activeIndex ? "dot-big" : "dot-small"}
+          ></span>
         ))}
       </div>
       <Swipeable

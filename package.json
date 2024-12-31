@@ -1,6 +1,6 @@
 {
-  "name": "siteportfolio",
-  "homepage": "https://mudalab.com.br/portfolio/",
+  "name": "portfolioguikominami",
+  "homepage": "https://mudalab.com.br/portfolioguikominami/",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,6 +11,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "portfolio_guilherme_kominami": "file:",
+    "portfolioguikominami": "file:",
+    "portfolioguilhermekominami": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-touch": "^0.4.4",

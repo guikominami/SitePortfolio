@@ -9,9 +9,9 @@ import mapa from "./assets/imgs/mapa.png";
 export const projects = [
   {
     id: 1,
-    title: "Unati",
+    title: "APP FOR E-LEARNING",
     descriptionEn:
-      "App for teaching the Terena Brazilian indigenous people language.",
+      "App designed for teaching the Terena language of the Brazilian Indigenous people.",
     descriptionPt:
       "Tradutor para aprendizagem da língua do povo indígena brasileiro Terena.",
     img: unati,
@@ -20,9 +20,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Boloriê Umutina",
+    title: "E-COMMERCE BOLORIÊ",
     descriptionEn:
-      "E-commerce for sale the products made by the Boloriê Umutina indigenous ethnic group from the Mato Grosso do Sul region - Brazil.",
+      "E-commerce platform for selling handmade products created by the Boloriê Umutina Indigenous ethnic group from the Mato Grosso do Sul region, Brazil.",
     descriptionPt:
       "Loja virtual para venda dos produtos elaborados pela etinia indígena Boloriê Umutina da região do Mato Grosso do Sul - Brasil.",
     img: bolorie,
@@ -35,7 +35,7 @@ export const projects = [
     descriptionPt:
       "Um jogo de RPG em que para derrotar o oponente, é necessário responder questões sobre diversos temas, além de contar com a sorte.",
     descriptionEn:
-      "An RPG game in which to defeat your opponent, you need to answer questions on different topics, in addition to relying on luck.",
+      "An RPG game where you defeat your opponent by answering questions on various topics, while also relying on luck.",
     img: quizgame,
     techs: ["ReactJs", "Frontend", "API"],
     link: "https://mudalab.com.br/rpgquizgame/",
@@ -43,22 +43,22 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Mudalab",
+    title: "WEBSITE MUDALAB",
     descriptionPt:
       "Negócio social que usa a tecnologia e educação para o desafio de soluções. Inspirado em Inovação Cidadã, Movimento Maker e Aprendizagem criativa",
     descriptionEn:
-      "Social business that combines technology and social knowledge to contribute to the solution of challenges. ",
+      "A website for a social business that combines technology and social knowledge to help solve global challenges.",
     img: mudalab,
     techs: ["ReactJs", "Frontend", "CSS"],
     link: "https://mudalab.com.br/",
   },
   {
     id: 5,
-    title: "OMEC",
+    title: "A GAMIFIED GRAPHIC STORYTELLING TOOL",
     descriptionPt:
       "Dispositivo de narrativa gráfica gamificada desenvolvido com Raspberry Py que estimula a reflexão sobre o livro 1984, de George Orwell e a realidade que estamos vivendo em nossa sociedade atual.",
     descriptionEn:
-      "Gamified graphic narrative device developed with Raspberry Py that encourages reflection on the book 1984 by George Orwell and the reality we are living in our current society.",
+      "A gamified graphic narrative device developed with Raspberry Pi that encourages reflection on George Orwell's 1984 and its connection to the reality of our current society.",
 
     img: omec,
     techs: ["Python", "Frontend", "SQL"],
@@ -66,18 +66,18 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Mapa Sonoro",
+    title: "VIRTUAL SOUND MAP",
     descriptionPt:
       "Exposição virtual de contos da artista Dunga Rodrigues de Cuiabá - Brasil.",
     descriptionEn:
-      "Virtual exhibition of short stories by artist Dunga Rodrigues from Cuiabá - Brazil.",
+      "Virtual exhibition of short stories by the artist Dunga Rodrigues from Cuiabá, Brazil.",
     img: mapa,
     techs: ["HTML", "CSS"],
     link: "https://grupotibanare.com.br/",
   },
   {
     id: 7,
-    title: "Art Portfólio",
+    title: "Art Portfolio",
     descriptionPt:
       "Portfólio de arte com desenhos digitais, feitos a mão e esboços do artista Otto Kominami.",
     descriptionEn:

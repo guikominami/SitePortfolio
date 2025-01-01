@@ -1,13 +1,16 @@
 // https://stackademic.com/blog/mastering-react-carousel-building-dynamic-image-sliders
 
 import { useState } from "react";
-import Slide from "./Slide";
+// import Slide from "./Slide";
+
 import "./Carousel.css";
 import buttonNext from "../assets/imgs/button_next.png";
 import buttonPrev from "../assets/imgs/button_prev.png";
 
 import { defineSwipe, Swipeable } from "react-touch";
 import { projects } from "../data";
+
+import Slide from "./Slide";
 
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -1,25 +1,27 @@
 /* eslint-disable react/prop-types */
-import { useEffect } from "react";
 import tools from "../assets/imgs/tools.png";
 import link from "../assets/imgs/link.png";
 import code from "../assets/imgs/code.png";
 
 import "./Slide.css";
+import { useState, useEffect } from "react";
 
 export default function Slide({ project }) {
-  useEffect(() => {
-    console.log("entrou");
-    const timer = setTimeout(() => {}, 3000);
+  const actualProject = project;
+  const [showDelayedImage, setShowDelayedImage] = useState(false);
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [project]);
+  useEffect(() => {
+    setShowDelayedImage(false);
+    setTimeout(() => {
+      console.log("entrou");
+      setShowDelayedImage(true);
+    }, 100);
+  }, [actualProject]);
 
   return (
     <div className="slide">
       <div className="content-img">
-        <img src={project.img} alt="" />
+        {showDelayedImage && <img src={project.img} alt="" />}
       </div>
       <div className="content-text">
         <h1>{project.title}</h1>

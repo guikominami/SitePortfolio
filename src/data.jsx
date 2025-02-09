@@ -5,6 +5,7 @@ import art from "./assets/imgs/art.png";
 import omec from "./assets/imgs/omec.png";
 import mudalab from "./assets/imgs/mudalab.png";
 import mapa from "./assets/imgs/mapa.png";
+import libraryapi from "./assets/imgs/library.png";
 
 export const projects = [
   {
@@ -20,6 +21,16 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Library system Backend",
+    descriptionEn: "Library system backend created with NodeJS and MongoDB.",
+    descriptionPt:
+      "Backend de um sistema de biblioteca criado em NodeJs and MongoDB.",
+    img: libraryapi,
+    techs: ["Backend", "NodeJS", "MongoDB"],
+    link: "https://mudalab.com.br/libraryapi/",
+  },
+  {
+    id: 3,
     title: "E-COMMERCE BOLORIÊ",
     descriptionEn:
       "E-commerce platform for selling handmade products created by the Boloriê Umutina Indigenous ethnic group from the Mato Grosso do Sul region, Brazil.",
@@ -30,7 +41,29 @@ export const projects = [
     link: "https://bolorieumutina.com.br/",
   },
   {
-    id: 3,
+    id: 4,
+    title: "VIRTUAL SOUND MAP",
+    descriptionPt:
+      "Exposição virtual de contos da artista Dunga Rodrigues de Cuiabá - Brasil.",
+    descriptionEn:
+      "Virtual exhibition of short stories by the artist Dunga Rodrigues from Cuiabá, Brazil.",
+    img: mapa,
+    techs: ["HTML", "CSS"],
+    link: "https://grupotibanare.com.br/",
+  },
+  {
+    id: 5,
+    title: "WEBSITE MUDALAB",
+    descriptionPt:
+      "Negócio social que usa a tecnologia e educação para o desafio de soluções. Inspirado em Inovação Cidadã, Movimento Maker e Aprendizagem criativa",
+    descriptionEn:
+      "A website for a social business that combines technology and social knowledge to help solve global challenges.",
+    img: mudalab,
+    techs: ["ReactJs", "Frontend", "CSS"],
+    link: "https://mudalab.com.br/",
+  },
+  {
+    id: 6,
     title: "Quiz RPG Game",
     descriptionPt:
       "Um jogo de RPG em que para derrotar o oponente, é necessário responder questões sobre diversos temas, além de contar com a sorte.",
@@ -42,18 +75,7 @@ export const projects = [
     code: "https://codesandbox.io/p/github/guikominami/RpgGameQuiz/main?import=true",
   },
   {
-    id: 4,
-    title: "WEBSITE MUDALAB",
-    descriptionPt:
-      "Negócio social que usa a tecnologia e educação para o desafio de soluções. Inspirado em Inovação Cidadã, Movimento Maker e Aprendizagem criativa",
-    descriptionEn:
-      "A website for a social business that combines technology and social knowledge to help solve global challenges.",
-    img: mudalab,
-    techs: ["ReactJs", "Frontend", "CSS"],
-    link: "https://mudalab.com.br/",
-  },
-  {
-    id: 5,
+    id: 7,
     title: "A GAMIFIED GRAPHIC STORYTELLING TOOL",
     descriptionPt:
       "Dispositivo de narrativa gráfica gamificada desenvolvido com Raspberry Py que estimula a reflexão sobre o livro 1984, de George Orwell e a realidade que estamos vivendo em nossa sociedade atual.",
@@ -65,18 +87,7 @@ export const projects = [
     link: "https://www.bibliolab.com.br/post/omec-uma-experi%C3%AAncia-multissensorial-de-leitura-de-1984",
   },
   {
-    id: 6,
-    title: "VIRTUAL SOUND MAP",
-    descriptionPt:
-      "Exposição virtual de contos da artista Dunga Rodrigues de Cuiabá - Brasil.",
-    descriptionEn:
-      "Virtual exhibition of short stories by the artist Dunga Rodrigues from Cuiabá, Brazil.",
-    img: mapa,
-    techs: ["HTML", "CSS"],
-    link: "https://grupotibanare.com.br/",
-  },
-  {
-    id: 7,
+    id: 8,
     title: "Art Portfolio",
     descriptionPt:
       "Portfólio de arte com desenhos digitais, feitos a mão e esboços do artista Otto Kominami.",

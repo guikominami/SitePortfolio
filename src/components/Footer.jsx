@@ -1,5 +1,4 @@
 import "./Footer.css";
-import logoInstagram from "../assets/imgs/logo_instagram.png";
 import logoLinkedin from "../assets/imgs/logo_linkedin.png";
 import logoSandbox from "../assets/imgs/logo_sandbox.png";
 import logoGithub from "../assets/imgs/logo_github.png";

@@ -25,14 +25,15 @@ export default function Slide({ project }) {
       <div className='content-text'>
         <h1>{project.title}</h1>
         <p>{project.descriptionEn}</p>
-        <p>
+        <div className='techsDiv'>
           <img className='icon' src={tools} alt='' />
           {project.techs.map((item, index) => (
             <span key={index}>
               <button className='techs'>{item}</button>
             </span>
           ))}
-        </p>
+        </div>
+
         <p>
           <a href={project.link} target='_blank'>
             <img className='icon' src={link} alt='' />

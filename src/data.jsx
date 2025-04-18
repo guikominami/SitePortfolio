@@ -16,8 +16,19 @@ export const projects = [
     descriptionPt:
       "Tradutor para aprendizagem da língua do povo indígena brasileiro Terena.",
     img: unati,
+    techs: ["ReactJs", "TypeScript", "Tailwind"],
+    link: "https://mudalab.com.br/unati/",
+  },
+  {
+    id: 5,
+    title: "WEBSITE MUDALAB",
+    descriptionPt:
+      "Negócio social que usa a tecnologia e educação para o desafio de soluções. Inspirado em Inovação Cidadã, Movimento Maker e Aprendizagem criativa",
+    descriptionEn:
+      "A website for a social business that combines technology and social knowledge to help solve global challenges.",
+    img: mudalab,
     techs: ["ReactJs", "Frontend", "CSS"],
-    link: "https://oraculocomunica.eco.br/unati/",
+    link: "https://mudalab.com.br/",
   },
   {
     id: 2,
@@ -50,17 +61,6 @@ export const projects = [
     img: mapa,
     techs: ["HTML", "CSS"],
     link: "https://grupotibanare.com.br/",
-  },
-  {
-    id: 5,
-    title: "WEBSITE MUDALAB",
-    descriptionPt:
-      "Negócio social que usa a tecnologia e educação para o desafio de soluções. Inspirado em Inovação Cidadã, Movimento Maker e Aprendizagem criativa",
-    descriptionEn:
-      "A website for a social business that combines technology and social knowledge to help solve global challenges.",
-    img: mudalab,
-    techs: ["ReactJs", "Frontend", "CSS"],
-    link: "https://mudalab.com.br/",
   },
   {
     id: 6,

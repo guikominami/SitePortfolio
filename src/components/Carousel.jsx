@@ -1,22 +1,18 @@
+/* eslint-disable react/prop-types */
 // https://stackademic.com/blog/mastering-react-carousel-building-dynamic-image-sliders
 
 import { useState } from "react";
-// import Slide from "./Slide";
 
 import "./Carousel.css";
 import buttonNext from "../assets/imgs/button_next.png";
 import buttonPrev from "../assets/imgs/button_prev.png";
 
 import { defineSwipe, Swipeable } from "react-touch";
-// import { projects } from "../data";
-import projectsJsonData from "../assets/data.json";
 
 import Slide from "./Slide";
 
-export default function Carousel() {
+export default function Carousel({ projectsJsonData }) {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const baseDir = import.meta.env.BASE_URL;
 
   const project = projectsJsonData[activeIndex];
 

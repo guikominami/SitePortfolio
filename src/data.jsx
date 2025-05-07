@@ -1,4 +1,4 @@
-import unati from "./assets/imgs/unati.png";
+/* import unati from "./assets/imgs/unati.png";
 import bolorie from "./assets/imgs/bolorie.png";
 import quizgame from "./assets/imgs/quizgame.png";
 import art from "./assets/imgs/art.png";
@@ -99,3 +99,4 @@ export const projects = [
     code: "https://codesandbox.io/p/github/guikominami/ArtPortfolio/draft/lucid-pine",
   },
 ];
+ */

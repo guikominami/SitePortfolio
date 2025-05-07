@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 
 export default function Slide({ project }) {
   const actualProject = project;
+  const baseDir = import.meta.env.BASE_URL;
+
   const [showDelayedImage, setShowDelayedImage] = useState(false);
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function Slide({ project }) {
   return (
     <div className='slide'>
       <div className='content-img'>
-        {showDelayedImage && <img src={project.img} alt='' />}
+        {showDelayedImage && <img src={baseDir + project.img} alt='' />}
       </div>
       <div className='content-text'>
         <h1>{project.title}</h1>

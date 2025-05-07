@@ -27,7 +27,7 @@ export const projects = [
     descriptionEn:
       "A website for a social business that combines technology and social knowledge to help solve global challenges.",
     img: mudalab,
-    techs: ["ReactJs", "Frontend", "CSS"],
+    techs: ["ReactJs", "TypeScript", "Tailwind"],
     link: "https://mudalab.com.br/",
   },
   {
@@ -59,8 +59,8 @@ export const projects = [
     descriptionEn:
       "Virtual exhibition of short stories by the artist Dunga Rodrigues from Cuiabá, Brazil.",
     img: mapa,
-    techs: ["HTML", "CSS"],
-    link: "https://grupotibanare.com.br/",
+    techs: ["ReactJs", "TypeScript", "Tailwind"],
+    link: "https://mudalab.com.br/mapasonoro/",
   },
   {
     id: 6,
